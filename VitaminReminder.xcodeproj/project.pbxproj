@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2D646A3229A54FBA0030AE80 /* VitaminReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D646A3129A54FBA0030AE80 /* VitaminReminderApp.swift */; };
-		2D646A3429A54FBA0030AE80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D646A3329A54FBA0030AE80 /* ContentView.swift */; };
 		2D646A3629A54FBB0030AE80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D646A3529A54FBB0030AE80 /* Assets.xcassets */; };
 		2D646A3929A54FBB0030AE80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D646A3829A54FBB0030AE80 /* Preview Assets.xcassets */; };
+		2D646A4829A550E40030AE80 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D646A4729A550E40030AE80 /* HomeView.swift */; };
+		2D646A5329A66F660030AE80 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D646A5229A66F660030AE80 /* Tabs.swift */; };
+		2D646A5529A681490030AE80 /* StrokeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D646A5429A681490030AE80 /* StrokeText.swift */; };
+		2D646A5729A6AE7F0030AE80 /* shaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D646A5629A6AE7F0030AE80 /* shaking.swift */; };
+		2D646A5929A75E7A0030AE80 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D646A5829A75E7A0030AE80 /* TabsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D646A2E29A54FBA0030AE80 /* VitaminReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VitaminReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D646A3129A54FBA0030AE80 /* VitaminReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminReminderApp.swift; sourceTree = "<group>"; };
-		2D646A3329A54FBA0030AE80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D646A3529A54FBB0030AE80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D646A3829A54FBB0030AE80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D646A4729A550E40030AE80 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2D646A5029A669250030AE80 /* MetalFX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalFX.framework; path = System/Library/Frameworks/MetalFX.framework; sourceTree = SDKROOT; };
+		2D646A5229A66F660030AE80 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
+		2D646A5429A681490030AE80 /* StrokeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeText.swift; sourceTree = "<group>"; };
+		2D646A5629A6AE7F0030AE80 /* shaking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shaking.swift; sourceTree = "<group>"; };
+		2D646A5829A75E7A0030AE80 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +46,7 @@
 			children = (
 				2D646A3029A54FBA0030AE80 /* VitaminReminder */,
 				2D646A2F29A54FBA0030AE80 /* Products */,
+				2D646A4F29A669250030AE80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +61,11 @@
 		2D646A3029A54FBA0030AE80 /* VitaminReminder */ = {
 			isa = PBXGroup;
 			children = (
-				2D646A3129A54FBA0030AE80 /* VitaminReminderApp.swift */,
-				2D646A3329A54FBA0030AE80 /* ContentView.swift */,
+				2D646A4929A551450030AE80 /* App */,
+				2D646A4429A5508D0030AE80 /* Models */,
+				2D646A4329A550880030AE80 /* Core */,
+				2D646A4229A550710030AE80 /* Managers */,
+				2D646A4129A5505D0030AE80 /* Extensions */,
 				2D646A3529A54FBB0030AE80 /* Assets.xcassets */,
 				2D646A3729A54FBB0030AE80 /* Preview Content */,
 			);
@@ -65,6 +78,71 @@
 				2D646A3829A54FBB0030AE80 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2D646A4129A5505D0030AE80 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2D646A4229A550710030AE80 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2D646A4329A550880030AE80 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2D646A4629A550CC0030AE80 /* ViewModel */,
+				2D646A4529A550C80030AE80 /* View */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2D646A4429A5508D0030AE80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D646A4529A550C80030AE80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D646A4729A550E40030AE80 /* HomeView.swift */,
+				2D646A5229A66F660030AE80 /* Tabs.swift */,
+				2D646A5429A681490030AE80 /* StrokeText.swift */,
+				2D646A5629A6AE7F0030AE80 /* shaking.swift */,
+				2D646A5829A75E7A0030AE80 /* TabsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D646A4629A550CC0030AE80 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2D646A4929A551450030AE80 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2D646A3129A54FBA0030AE80 /* VitaminReminderApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2D646A4F29A669250030AE80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D646A5029A669250030AE80 /* MetalFX.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +161,8 @@
 			dependencies = (
 			);
 			name = VitaminReminder;
+			packageProductDependencies = (
+			);
 			productName = VitaminReminder;
 			productReference = 2D646A2E29A54FBA0030AE80 /* VitaminReminder.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +191,8 @@
 				Base,
 			);
 			mainGroup = 2D646A2529A54FBA0030AE80;
+			packageReferences = (
+			);
 			productRefGroup = 2D646A2F29A54FBA0030AE80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +219,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D646A3429A54FBA0030AE80 /* ContentView.swift in Sources */,
+				2D646A5529A681490030AE80 /* StrokeText.swift in Sources */,
+				2D646A5729A6AE7F0030AE80 /* shaking.swift in Sources */,
 				2D646A3229A54FBA0030AE80 /* VitaminReminderApp.swift in Sources */,
+				2D646A4829A550E40030AE80 /* HomeView.swift in Sources */,
+				2D646A5929A75E7A0030AE80 /* TabsView.swift in Sources */,
+				2D646A5329A66F660030AE80 /* Tabs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
